@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: br.com.elosoft.teledyna;singleton:=true
+Bundle-Version: 0.0.1
+Bundle-Name: TeleDyna
+Bundle-ClassPath: .
+Require-Bundle: com.dynatrace.diagnostics.sdk
+Bundle-ManifestVersion: 2
+Bundle-Vendor: Dynatrace
+

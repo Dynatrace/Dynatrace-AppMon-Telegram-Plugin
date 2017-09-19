@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<!-- plugin.xml file written by dynaTrace Client 6.2.1 -->
+<plugin>
+  <extension point="com.dynatrace.diagnostics.pdk.pluginconfig" id="br.com.elosoft.teledyna" name="TeleDyna">
+    <information>
+      <category value="" />
+      <displayname value="TeleDyna" />
+      <description value="This Dynatrace plugin can send incident messages to Telegram" />
+      <supportlevel value="unsupported" />
+    </information>
+    <configuration>
+      <property key="TELEGRAM_TOKEN" label="TELEGRAM_TOKEN" type="string" description="" default="" multiline="false" />
+      <property key="TELEGRAM_CHAT" label="TELEGRAM_CHAT" type="string" description="" default="" multiline="false" />
+      <property key="TELEGRAM_PATH_SHELL" label="TELEGRAM_PATH_SHELL" type="string" description="My property description ..." default="/home/projects/teledyna/" multiline="false" />
+    </configuration>
+  </extension>
+  <extension point="com.dynatrace.diagnostics.pdk.action" id="br.com.elosoft.teledyna.action" name="TeleDyna">
+    <plugin configid="br.com.elosoft.teledyna" class="br.com.elosoft.teledyna.TeleDyna" />
+  </extension>
+</plugin>
